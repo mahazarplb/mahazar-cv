@@ -1,137 +1,288 @@
 
-/* ===== COMPACT PROFESSIONAL DESIGN ===== */
-
-.container {
-    width: min(100% - 48px, 960px);
+* {
+    box-sizing: border-box;
 }
 
-/* Header */
-
-.header {
-    width: min(100% - 48px, 960px);
-    height: 68px;
+:root {
+    --ink: #202d3b;
+    --muted: #667587;
+    --blue: #315f88;
+    --line: #dfe5eb;
 }
 
-nav {
-    gap: 20px;
-    font-size: 0.8rem;
+body {
+    margin: 0;
+    background: #edf1f5;
+    color: var(--ink);
+    font-family: Inter, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
-/* Hero */
-
-.hero {
-    min-height: auto;
-    grid-template-columns: 1.5fr 0.5fr;
-    gap: 45px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+.cv-page {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 700px;
+    margin: 24px auto;
+    padding: 34px 42px 22px;
+    background: white;
+    box-shadow: 0 5px 25px rgba(25, 45, 65, .07);
 }
 
-.hero h1 {
-    font-size: clamp(2.7rem, 5vw, 3.8rem);
-    letter-spacing: -2.5px;
-    line-height: 1.05;
-    margin: 14px 0;
+/* HEADER */
+
+.top {
+    display: grid;
+    grid-template-columns: 105px 1fr auto;
+    align-items: center;
+    gap: 22px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid var(--ink);
 }
 
-.intro {
-    max-width: 490px;
-    font-size: 0.91rem;
-    line-height: 1.7;
+.photo {
+    width: 92px;
+    height: 112px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
 }
 
-.photo-container {
-    justify-content: flex-end;
+.eyebrow {
+    margin: 0 0 6px;
+    color: var(--blue);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
 
-.profile-photo {
-    width: 165px;
-    height: 195px;
-    border-radius: 5px;
+h1 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -1.2px;
 }
 
-.location {
-    margin-top: 22px;
+h1 span {
+    color: var(--blue);
 }
 
-/* Sections */
-
-.section {
-    grid-template-columns: 190px 1fr;
-    gap: 35px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+.summary {
+    margin: 7px 0;
+    color: var(--muted);
+    font-size: 11px;
 }
 
-.section-heading h2 {
-    font-size: 1.35rem;
+.contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    color: var(--muted);
+    font-size: 9px;
 }
 
-.highlight {
-    font-size: 1.05rem !important;
+.contact-line a {
+    color: var(--blue);
+    text-decoration: none;
 }
 
-/* Skills */
-
-.skill-row {
-    padding: 9px 0;
+#print-cv {
+    align-self: start;
+    padding: 7px 10px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: white;
+    color: var(--ink);
+    font: inherit;
+    font-size: 10px;
+    cursor: pointer;
 }
 
-/* Projects */
+/* TWO COLUMNS */
+
+.columns {
+    display: grid;
+    grid-template-columns: .9fr 1.3fr;
+    gap: 32px;
+    padding-top: 20px;
+}
+
+section {
+    margin-bottom: 19px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--line);
+    color: var(--blue);
+    font-size: 10px;
+    letter-spacing: 1.1px;
+}
+
+h3 {
+    margin: 0 0 3px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+p {
+    margin: 3px 0;
+}
+
+.item {
+    margin-bottom: 12px;
+}
+
+.item p,
+.body-text,
+.project p,
+.experience p,
+.skill p {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+small {
+    color: var(--muted);
+    font-size: 9px;
+}
+
+/* SKILLS */
+
+.skill {
+    margin-bottom: 8px;
+}
+
+.skill strong {
+    font-size: 10px;
+}
+
+.skill p {
+    margin-top: 1px;
+}
+
+/* LANGUAGES */
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 10px;
+}
+
+.language strong {
+    color: var(--blue);
+}
+
+/* PROJECTS */
 
 .project {
-    padding-bottom: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
-/* Contact */
-
-.contact {
-    margin-top: 28px;
-    margin-bottom: 30px;
-    padding: 25px 28px;
+.project p {
+    line-height: 1.45;
 }
 
-/* Footer */
+/* EXPERIENCE */
+
+.experience {
+    margin-bottom: 11px;
+}
+
+.experience p {
+    line-height: 1.4;
+}
+
+/* FOOTER */
 
 footer {
-    font-size: 0.72rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 9px;
 }
 
-/* Smaller screens */
+/* LAPTOP AND SMALL SCREENS */
 
-@media (max-width: 760px) {
-    .hero {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        padding-top: 35px;
-        padding-bottom: 35px;
+@media screen and (max-width: 700px) {
+    .cv-page {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 22px;
     }
 
-    .photo-container {
-        justify-content: flex-start;
+    .top {
+        grid-template-columns: 75px 1fr;
+        gap: 14px;
     }
 
-    .section {
+    .photo {
+        width: 72px;
+        height: 88px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #print-cv {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .columns {
         grid-template-columns: 1fr;
-        gap: 12px;
-        padding-top: 28px;
-        padding-bottom: 28px;
+        gap: 0;
     }
 }
 
-@media (max-width: 520px) {
-    .container,
-    .header {
-        width: calc(100% - 36px);
+/* A4 PRINT */
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
     }
 
-    .hero h1 {
-        font-size: 2.8rem;
+    body {
+        background: white;
+        font-size: 10px;
     }
 
-    .profile-photo {
-        width: 135px;
-        height: 160px;
+    .cv-page {
+        width: 100%;
+        max-width: none;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    #print-cv {
+        display: none;
+    }
+
+    .columns {
+        gap: 28px;
+        padding-top: 16px;
+    }
+
+    section {
+        margin-bottom: 14px;
+        break-inside: avoid;
+    }
+
+    .top {
+        padding-bottom: 15px;
+    }
+
+    footer {
+        margin-top: 5px;
     }
 }
