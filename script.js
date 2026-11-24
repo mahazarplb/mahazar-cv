@@ -1,20 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+    const printButton = document.getElementById("print-cv");
 
-    // Update footer year
-    const yearElement = document.getElementById("year");
-
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-
-    // Save website as PDF
-    const downloadButton = document.getElementById("download-cv");
-
-    if (downloadButton) {
-        downloadButton.addEventListener("click", function () {
+    if (printButton) {
+        printButton.addEventListener("click", function () {
             window.print();
         });
     }
-
 });
