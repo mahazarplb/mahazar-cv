@@ -4,342 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Mahazar Poulab | IT Student - Network and Communication">
-
-    <title>Mahazar Poulab | IT Portfolio</title>
-
+    <title>Mahazar Poulab | CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
 
-<header class="header">
-    <a href="#home" class="logo">MP<span>.</span></a>
+<div class="cv-page">
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header class="top">
+        <img src="./profile.jpg" alt="Mahazar Poulab" class="photo">
 
-    <button id="download-cv" class="download-button">
-        Save as PDF
-    </button>
-</header>
-
-<main>
-
-    <!-- HERO -->
-
-    <section class="hero container" id="home">
-
-        <div class="hero-content">
-
-            <p class="subtitle">IT STUDENT · NETWORK & COMMUNICATION</p>
-
-            <h1>Mahazar<br><span>Poulab</span></h1>
-
-            <p class="intro">
-                Information Technology student at Carinthia University
-                of Applied Sciences, focused on computer networks,
-                IT infrastructure and practical software development.
+        <div class="identity">
+            <p class="eyebrow">INFORMATION TECHNOLOGY · NETWORK & COMMUNICATION</p>
+            <h1>Mahazar <span>Poulab</span></h1>
+            <p class="summary">
+                IT student focused on computer networks, IT infrastructure
+                and practical software development.
             </p>
-
-            <div class="hero-buttons">
-                <a href="mailto:mahazar.poulab96@gmail.com" class="primary-button">
-                    Get in touch
-                </a>
-
-                <a href="#projects" class="secondary-link">
-                    Explore my projects →
-                </a>
+            <div class="contact-line">
+                Villach, Austria
+                <span>·</span>
+                <a href="mailto:mahazar.poulab96@gmail.com">mahazar.poulab96@gmail.com</a>
+                <span>·</span>
+                <a href="https://github.com/mahazarplb" target="_blank">GitHub</a>
             </div>
-
-            <p class="location">
-                Villach, Austria · Open to IT opportunities
-            </p>
-
         </div>
 
-        <div class="photo-container">
-            <img src="./profile.jpg" alt="Mahazar Poulab" class="profile-photo">
-        </div>
+        <button id="print-cv" type="button">Save PDF</button>
+    </header>
 
-    </section>
+    <main class="columns">
 
+        <aside class="left-column">
 
-    <!-- ABOUT -->
+            <section>
+                <h2>EDUCATION</h2>
+                <div class="item">
+                    <h3>Carinthia University of Applied Sciences</h3>
+                    <p>Information Technology – Network and Communication</p>
+                    <small>Austria · Current studies</small>
+                </div>
 
-    <section class="section container" id="about">
+                <div class="item">
+                    <h3>Islamic Azad University, Lahijan Branch</h3>
+                    <p>Bachelor's Degree in Architectural Engineering</p>
+                    <small>Lahijan, Iran</small>
+                </div>
+            </section>
 
-        <div class="section-heading">
-            <span>01</span>
-            <h2>About</h2>
-        </div>
+            <section>
+                <h2>TECHNICAL SKILLS</h2>
+                <div class="skill">
+                    <strong>Networking</strong>
+                    <p>TCP/IP, DNS, DHCP, Subnetting</p>
+                </div>
+                <div class="skill">
+                    <strong>Operating Systems</strong>
+                    <p>Linux, Windows</p>
+                </div>
+                <div class="skill">
+                    <strong>Programming</strong>
+                    <p>Python, C#, JavaScript</p>
+                </div>
+                <div class="skill">
+                    <strong>Web & Database</strong>
+                    <p>HTML, CSS, PHP, SQL, MariaDB</p>
+                </div>
+                <div class="skill">
+                    <strong>Tools</strong>
+                    <p>Git, Wireshark, VirtualBox, Docker</p>
+                </div>
+            </section>
 
-        <div class="section-content">
+            <section>
+                <h2>LANGUAGES</h2>
+                <div class="language">
+                    <span>Persian</span><strong>Native</strong>
+                </div>
+                <div class="language">
+                    <span>English</span><strong>B2</strong>
+                </div>
+                <div class="language">
+                    <span>German</span><strong>B1</strong>
+                </div>
+            </section>
 
-            <p class="highlight">
-                Interested in computer networks, IT systems and
-                solving practical technical problems.
-            </p>
+        </aside>
 
-            <p>
-                I am currently studying Information Technology,
-                specializing in Network and Communication at
-                Carinthia University of Applied Sciences (CUAS).
+        <div class="right-column">
 
-                My academic background also includes a Bachelor's
-                degree in Architectural Engineering. I enjoy combining
-                analytical thinking with practical technical work.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- EDUCATION -->
-
-    <section class="section container" id="education">
-
-        <div class="section-heading">
-            <span>02</span>
-            <h2>Education</h2>
-        </div>
-
-        <div class="section-content">
-
-            <article class="entry">
-                <p class="entry-location">AUSTRIA</p>
-
-                <h3>Carinthia University of Applied Sciences</h3>
-
-                <p class="entry-title">
-                    Information Technology – Network and Communication
+            <section>
+                <h2>PROFILE</h2>
+                <p class="body-text">
+                    I am studying Information Technology at Carinthia University
+                    of Applied Sciences, specializing in Network and Communication.
+                    My interests include computer networks, operating systems,
+                    IT infrastructure and software development. My previous
+                    academic background is in Architectural Engineering.
                 </p>
+            </section>
 
-                <p class="muted">Current studies</p>
-            </article>
+            <section>
+                <h2>SELECTED PROJECTS</h2>
 
-            <article class="entry">
-                <p class="entry-location">IRAN</p>
-
-                <h3>Islamic Azad University, Lahijan Branch</h3>
-
-                <p class="entry-title">
-                    Bachelor's Degree in Architectural Engineering
-                </p>
-
-                <p class="muted">Lahijan, Iran</p>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-
-    <section class="section container" id="skills">
-
-        <div class="section-heading">
-            <span>03</span>
-            <h2>Technical Skills</h2>
-        </div>
-
-        <div class="section-content">
-
-            <div class="skill-row">
-                <h3>Networking</h3>
-                <p>TCP/IP · DNS · DHCP · Subnetting</p>
-            </div>
-
-            <div class="skill-row">
-                <h3>Operating Systems</h3>
-                <p>Linux · Windows</p>
-            </div>
-
-            <div class="skill-row">
-                <h3>Programming</h3>
-                <p>Python · C# · JavaScript</p>
-            </div>
-
-            <div class="skill-row">
-                <h3>Web Technologies</h3>
-                <p>HTML · CSS · PHP</p>
-            </div>
-
-            <div class="skill-row">
-                <h3>Tools & Databases</h3>
-                <p>Git · Wireshark · Docker · SQL · MariaDB</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section class="section container" id="projects">
-
-        <div class="section-heading">
-            <span>04</span>
-            <h2>Selected Projects</h2>
-        </div>
-
-        <div class="section-content">
-
-            <article class="project">
-                <span class="project-number">01</span>
-
-                <div>
+                <div class="project">
                     <h3>Network Monitoring System</h3>
-
                     <p>
-                        Developed a web-based monitoring project on
-                        Raspberry Pi using Docker Compose, Apache,
-                        PHP and MariaDB.
+                        Web-based monitoring project on Raspberry Pi using
+                        Docker Compose, Apache, PHP and MariaDB.
                     </p>
-
-                    <small>Raspberry Pi · Docker · PHP · MariaDB</small>
                 </div>
-            </article>
 
-            <article class="project">
-                <span class="project-number">02</span>
-
-                <div>
+                <div class="project">
                     <h3>Network Diagnostic Tool</h3>
-
                     <p>
-                        Developed a C# application for testing network
-                        connectivity and performing basic diagnostic tasks.
+                        C# application for network connectivity testing
+                        and basic diagnostic tasks.
                     </p>
-
-                    <small>C# · TCP/IP</small>
                 </div>
-            </article>
 
-            <article class="project">
-                <span class="project-number">03</span>
-
-                <div>
+                <div class="project">
                     <h3>Personal Portfolio Website</h3>
-
-                    <p>
-                        Designed and developed a personal website
-                        using HTML, CSS and JavaScript.
-                    </p>
-
-                    <small>HTML · CSS · JavaScript</small>
+                    <p>Personal website developed using HTML, CSS and JavaScript.</p>
                 </div>
-            </article>
 
-            <article class="project">
-                <span class="project-number">04</span>
-
-                <div>
+                <div class="project">
                     <h3>Python Automation</h3>
-
-                    <p>
-                        Created Python scripts for basic automation
-                        and file-handling tasks.
-                    </p>
-
-                    <small>Python · Automation</small>
+                    <p>Scripts for basic automation and file-handling tasks.</p>
                 </div>
-            </article>
+            </section>
+
+            <section>
+                <h2>ADDITIONAL EXPERIENCE</h2>
+
+                <div class="experience">
+                    <h3>IT & Network Practice</h3>
+                    <small>2024</small>
+                    <p>Practical experience in IT and networking.</p>
+                </div>
+
+                <div class="experience">
+                    <h3>Chess Arbiter · FIDE Licensed</h3>
+                    <small>2024</small>
+                    <p>
+                        Chess arbitration, competition rules,
+                        impartial decision-making and communication.
+                    </p>
+                </div>
+            </section>
 
         </div>
+    </main>
 
-    </section>
+    <footer>
+        <span>Mahazar Poulab</span>
+        <span>Villach, Austria</span>
+    </footer>
 
-
-    <!-- EXPERIENCE -->
-
-    <section class="section container" id="experience">
-
-        <div class="section-heading">
-            <span>05</span>
-            <h2>Experience</h2>
-        </div>
-
-        <div class="section-content">
-
-            <article class="entry">
-                <h3>IT & Network Practice</h3>
-                <p class="muted">2024</p>
-                <p>Practical experience in IT and networking.</p>
-            </article>
-
-            <article class="entry">
-                <h3>Chess Arbiter · FIDE Licensed</h3>
-                <p class="muted">2024</p>
-                <p>
-                    Experience in chess arbitration, competition rules,
-                    impartial decision-making and communication.
-                </p>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- LANGUAGES -->
-
-    <section class="section container" id="languages">
-
-        <div class="section-heading">
-            <span>06</span>
-            <h2>Languages</h2>
-        </div>
-
-        <div class="section-content language-list">
-            <p><strong>Persian</strong><span>Native</span></p>
-            <p><strong>English</strong><span>B2</span></p>
-            <p><strong>German</strong><span>B1</span></p>
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section class="contact container" id="contact">
-
-        <div>
-            <p class="subtitle">CONTACT</p>
-            <h2>Let's connect.</h2>
-            <p>
-                Interested in IT internships and working-student opportunities.
-            </p>
-        </div>
-
-        <a href="mailto:mahazar.poulab96@gmail.com" class="primary-button">
-            Send an email →
-        </a>
-
-    </section>
-
-</main>
-
-
-<footer class="container">
-    <span>© <span id="year"></span> Mahazar Poulab</span>
-    <span>Villach, Austria</span>
-</footer>
+</div>
 
 <script src="./script.js"></script>
-
 </body>
 </html>
+
