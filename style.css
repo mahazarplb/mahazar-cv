@@ -4,63 +4,66 @@
 }
 
 :root {
-    --ink: #202d3b;
-    --muted: #667587;
-    --blue: #315f88;
-    --line: #dfe5eb;
+    --ink: #263746;
+    --muted: #647383;
+    --blue: #345d7e;
+    --line: #e5e9ed;
+}
+
+html {
+    background: #ffffff;
 }
 
 body {
     margin: 0;
-    background: #edf1f5;
+    background: #ffffff;
     color: var(--ink);
     font-family: Inter, Arial, sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 11px;
+    line-height: 1.4;
 }
 
 .cv-page {
     width: 100%;
-    max-width: 1000px;
-    min-height: 700px;
-    margin: 24px auto;
-    padding: 34px 42px 22px;
-    background: white;
-    box-shadow: 0 5px 25px rgba(25, 45, 65, .07);
+    max-width: 850px;
+    min-height: 0;
+    margin: 0 auto;
+    padding: 24px 32px 16px;
+    background: #ffffff;
 }
 
 /* HEADER */
 
 .top {
     display: grid;
-    grid-template-columns: 105px 1fr auto;
+    grid-template-columns: 78px minmax(0, 1fr) auto;
     align-items: center;
-    gap: 22px;
-    padding-bottom: 22px;
-    border-bottom: 2px solid var(--ink);
+    gap: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
 }
 
 .photo {
-    width: 92px;
-    height: 112px;
+    width: 68px;
+    height: 82px;
     object-fit: cover;
     object-position: center;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .eyebrow {
-    margin: 0 0 6px;
+    margin: 0 0 4px;
     color: var(--blue);
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 700;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
 }
 
 h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 27px;
     line-height: 1.15;
-    letter-spacing: -1.2px;
+    letter-spacing: -1px;
 }
 
 h1 span {
@@ -68,17 +71,17 @@ h1 span {
 }
 
 .summary {
-    margin: 7px 0;
+    margin: 5px 0;
     color: var(--muted);
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .contact-line {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 6px;
     color: var(--muted);
-    font-size: 9px;
+    font-size: 8px;
 }
 
 .contact-line a {
@@ -88,50 +91,51 @@ h1 span {
 
 #print-cv {
     align-self: start;
-    padding: 7px 10px;
+    padding: 5px 8px;
     border: 1px solid var(--line);
-    border-radius: 3px;
+    border-radius: 2px;
     background: white;
     color: var(--ink);
     font: inherit;
-    font-size: 10px;
+    font-size: 9px;
     cursor: pointer;
 }
 
-/* TWO COLUMNS */
+/* MAIN COLUMNS */
 
 .columns {
     display: grid;
-    grid-template-columns: .9fr 1.3fr;
-    gap: 32px;
-    padding-top: 20px;
+    grid-template-columns: 0.9fr 1.3fr;
+    gap: 25px;
+    padding-top: 15px;
 }
 
 section {
-    margin-bottom: 19px;
+    margin-bottom: 14px;
 }
 
 h2 {
-    margin: 0 0 10px;
-    padding-bottom: 5px;
+    margin: 0 0 8px;
+    padding-bottom: 4px;
     border-bottom: 1px solid var(--line);
     color: var(--blue);
-    font-size: 10px;
-    letter-spacing: 1.1px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 h3 {
-    margin: 0 0 3px;
-    font-size: 11px;
+    margin: 0 0 2px;
+    font-size: 10px;
     font-weight: 700;
 }
 
 p {
-    margin: 3px 0;
+    margin: 2px 0;
 }
 
 .item {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 .item p,
@@ -140,22 +144,23 @@ p {
 .experience p,
 .skill p {
     color: var(--muted);
-    font-size: 10px;
+    font-size: 9px;
+    line-height: 1.45;
 }
 
 small {
     color: var(--muted);
-    font-size: 9px;
+    font-size: 8px;
 }
 
 /* SKILLS */
 
 .skill {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .skill strong {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .skill p {
@@ -167,9 +172,9 @@ small {
 .language {
     display: flex;
     justify-content: space-between;
-    padding: 4px 0;
-    border-bottom: 1px solid #f0f2f5;
-    font-size: 10px;
+    padding: 3px 0;
+    border-bottom: 1px solid #f0f2f4;
+    font-size: 9px;
 }
 
 .language strong {
@@ -179,21 +184,21 @@ small {
 /* PROJECTS */
 
 .project {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 .project p {
-    line-height: 1.45;
+    margin-top: 2px;
 }
 
 /* EXPERIENCE */
 
 .experience {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 }
 
 .experience p {
-    line-height: 1.4;
+    margin-top: 2px;
 }
 
 /* FOOTER */
@@ -201,34 +206,32 @@ small {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
-    padding-top: 10px;
+    margin-top: 5px;
+    padding-top: 7px;
     border-top: 1px solid var(--line);
     color: var(--muted);
-    font-size: 9px;
+    font-size: 8px;
 }
 
-/* LAPTOP AND SMALL SCREENS */
+/* MOBILE */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
     .cv-page {
-        width: calc(100% - 20px);
-        margin: 10px auto;
-        padding: 22px;
+        padding: 18px;
     }
 
     .top {
-        grid-template-columns: 75px 1fr;
-        gap: 14px;
+        grid-template-columns: 65px minmax(0, 1fr);
+        gap: 12px;
     }
 
     .photo {
-        width: 72px;
-        height: 88px;
+        width: 60px;
+        height: 74px;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #print-cv {
@@ -252,16 +255,16 @@ footer {
 
     body {
         background: white;
-        font-size: 10px;
+        font-size: 9px;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
     }
 
     .cv-page {
         width: 100%;
         max-width: none;
-        min-height: 0;
         margin: 0;
         padding: 0;
-        box-shadow: none;
     }
 
     #print-cv {
@@ -269,20 +272,16 @@ footer {
     }
 
     .columns {
-        gap: 28px;
-        padding-top: 16px;
+        gap: 22px;
+        padding-top: 12px;
     }
 
     section {
-        margin-bottom: 14px;
+        margin-bottom: 11px;
         break-inside: avoid;
     }
 
-    .top {
-        padding-bottom: 15px;
-    }
-
     footer {
-        margin-top: 5px;
+        margin-top: 4px;
     }
 }
